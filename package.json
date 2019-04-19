@@ -1,0 +1,41 @@
+{
+  "name": "skylark-ace",
+  "version": "0.9.0",
+  "description": "A version of ace v1.4.3 that ported to running on skylarkjs.",
+  "main": "-",
+  "scripts": {
+    "build": "sbundle build .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "homepage": "www.skylarkjs.org",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skylark-integration/skylark-ace.git"
+  },
+  "keywords": [
+    "skylark",
+    "skylarkjs",
+    "ace fully compatible",
+    "library"
+  ],
+  "author": "Hudaokeji Co.,Ltd",
+  "license": "MIT",
+  "bugs": "https://github.com/skylark-integration/skylark-ace/issues",
+  "devDependencies": {
+    "skylark-langx": "git+https://github.com/skylarklangx/skylark-langx.git#master",
+    "skylark-utils-dom": "git+https://github.com/skylarkutils/skylark-utils-dom.git#master"
+  },
+  "skylarkjs": {
+    "build": {
+      "prepare" : {
+        "texttojs" : ["css","html"]
+      },
+      "bundle": {
+        "initOnLoad": true
+      }
+    }
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  }
+}
