@@ -25,6 +25,7 @@
     "skylark-langx": "git+https://github.com/skylarklangx/skylark-langx.git#master",
     "skylark-utils-dom": "git+https://github.com/skylarkutils/skylark-utils-dom.git#master"
   },
+  "files": ["demo/", "dist/", "src/"],
   "skylarkjs": {
     "build": {
       "prepare": {
