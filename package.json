@@ -25,9 +25,8 @@
     "skylark-langx": "git+https://github.com/skylark-langx/skylark-langx.git"
   },
   "files": [
-    "demo/",
     "dist/",
-    "src/"
+    "skins"
   ],
   "skylarkjs": {
     "build": {
